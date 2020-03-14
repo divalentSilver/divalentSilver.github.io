@@ -1,0 +1,10 @@
+I"�<p>알고리즘 Problem Solving을 연습해야겠다는 생각이 들어서 공부를 제대로 하기 시작했다.<br />
+먼저 코딩 테스트 환경에 맞춰 개발환경을 세팅했다.</p>
+<ol>
+  <li><a href="https://code.visualstudio.com/Download">Visual Studio Code 설치</a></li>
+  <li>UI를 한글로 바꾸고싶어서 <a href="https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ko">한국어UI extension 설치</a></li>
+  <li><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools">c/c++ extension 설치</a></li>
+  <li>gcc를 쓰기 위해 <a href="https://code.visualstudio.com/docs/cpp/config-mingw">Mingw 설치하고 configuration하기</a><br />
+여기서 c++98로 설정</li>
+</ol>
+:ET
