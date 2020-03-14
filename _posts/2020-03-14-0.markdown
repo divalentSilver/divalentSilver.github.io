@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "알고리즘 Problem Solving을 위한 개발환경 설정"
+date:   2020-03-14
+categories: ProblemSolving 개발환경설정
+---
+알고리즘 Problem Solving을 연습해야겠다는 생각이 들어서 공부를 제대로 하기 시작했다.
+먼저 코딩 테스트 환경에 맞춰 개발환경을 세팅했다.
+
+```c
+const Razorpay = require('razorpay');
+
+let rzp = Razorpay({
+	key_id: 'KEY_ID',
+	secret: 'name'
+});
+
+// capture request
+rzp.capture(payment_id, cost)
+	.then(function (data) {
+		return 2;
+	})
+```
+
+Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
