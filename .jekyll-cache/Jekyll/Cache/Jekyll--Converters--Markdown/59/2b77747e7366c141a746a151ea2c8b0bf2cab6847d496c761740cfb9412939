@@ -1,21 +1,14 @@
-I"�<p>알고리즘 Problem Solving을 연습해야겠다는 생각이 들어서 공부를 제대로 하기 시작했다.<br />
+I"	<p>알고리즘 Problem Solving을 연습해야겠다는 생각이 들어서 공부를 제대로 하기 시작했다.<br />
 먼저 코딩 테스트 환경에 맞춰 개발환경을 세팅했다.</p>
 <ol>
   <li><a href="https://code.visualstudio.com/Download">Visual Studio Code 설치</a></li>
   <li>UI를 한글로 바꾸고싶어서 <a href="https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ko">한국어UI extension 설치</a></li>
-  <li><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools">c/c++ extension 설치</a></li>
+  <li><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)">c/c++ extension 설치</a></li>
   <li>gcc를 쓰기 위해 <a href="https://code.visualstudio.com/docs/cpp/config-mingw">Mingw 설치하고 configuration하기</a> (여기서 c++98로 설정 가능)</li>
 </ol>
 
-<p>4번 과정에서 링크 걸어둔 페이지에 나오는 것을 차례대로 해보면서 VS Code에서 빌드, 디버깅하는 방법을 익혔다.<br />
+<p>4번 과정에서 링크 걸어둔 페이지에 나오는 것을 차례대로 해보면서 VS Code에서 빌드랑 디버깅하는 방법을 익혔다.<br />
 c++98로 설정했기 때문에 페이지 말미에 나오는 예제 코드를 아래와 같이 수정해서 해야했다.</p>
-
-<p>다음에</p>
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />c++11에서는 되지만 c++98에서는 안되는 문법 정리</li>
-</ul>
-
-<p>를 해야겠다</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;iostream&gt;
 #include &lt;vector&gt;
@@ -35,6 +28,9 @@ c++98로 설정했기 때문에 페이지 말미에 나오는 예제 코드를 �
 
 </code></pre></div></div>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+<hr />
+
+<p>Task list<br />
+[ ] c++11에서는 되지만 c++98에서는 안되는 문법 정리</p>
 
 :ET
