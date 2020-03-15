@@ -49,6 +49,15 @@ plainwhite:
 # Build settings
 # theme: plainwhite
 
+tipue_search:
+     include:
+         pages: false
+         collections: []
+     exclude:
+         files: [search.html, index.html, tags.html]
+         categories: []
+         tags: []
+
 plugins:
   - jekyll-seo-tag
 #  - jekyll-feed
