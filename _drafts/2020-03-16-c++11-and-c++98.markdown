@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "c++11과 c++98 문법 차이"
+date:   2020-03-16
+categories: [ProblemSolving, C/C++]
+comments: true
+---
+C\++11과 C\++98에서 문법이 달라 여기선 잘 돌아가는데 다른데선 잘 돌아가지 않는 경우가 있다.  
+요즘은 대부분 modern C\++을 쓰긴 하지만 코딩테스트 채점 서버에서는 C\++98로 strict하게 체크하는 경우가 종종 있다고 한다.  
+VS Code에서 C++98로 설정해놓고 문제 풀이를 하고 있는데, 문제를 풀면서 문법 차이점을 발견할 때 마다 정리하고있다.  
+
+## 중괄호로 초기화하기
+
+### 1) vector 초기화 방법
+```cpp
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+int main(){
+    //c++11에선 이렇게
+    vector<string> msg = {"Hello", "C++", "World", "from", "VS Code", "and the C++ extension"};
+    //c++98에선 이렇게
+    vector<string> msg;
+    msg.push_back("Hello"), msg.push_back("C++"), msg.push_back("World");
+    msg.push_back("from"), msg.push_back("VS Code"), msg.push_back("and the C++ extension!");
+
+    for (const string& word : msg){
+        cout << word << " ";
+    }
+    cout << endl;
+}
+
+```
+
+To be continued..
+
+---
+
+Task list  
+

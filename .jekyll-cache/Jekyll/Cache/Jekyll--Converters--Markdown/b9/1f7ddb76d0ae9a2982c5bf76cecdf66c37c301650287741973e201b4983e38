@@ -1,0 +1,35 @@
+I"�<p>C++11과 C++98에서 문법이 달라 여기선 잘 돌아가는데 다른데선 잘 돌아가지 않는 경우가 있다.<br />
+요즘은 대부분 modern C++을 쓰긴 하지만 코딩테스트 채점 서버에서는 C++98로 strict하게 체크하는 경우가 종종 있다고 한다.<br />
+VS Code에서 C++98로 설정해놓고 문제 풀이를 하고 있는데, 문제를 풀면서 문법 차이점을 발견할 때 마다 정리하고있다.</p>
+
+<h2 id="중괄호로-초기화하기">중괄호로 초기화하기</h2>
+
+<h3 id="1-vector-초기화-방법">1) vector 초기화 방법</h3>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;string&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+    <span class="c1">//c++11에선 이렇게</span>
+    <span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">msg</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Hello"</span><span class="p">,</span> <span class="s">"C++"</span><span class="p">,</span> <span class="s">"World"</span><span class="p">,</span> <span class="s">"from"</span><span class="p">,</span> <span class="s">"VS Code"</span><span class="p">,</span> <span class="s">"and the C++ extension"</span><span class="p">};</span>
+    <span class="c1">//c++98에선 이렇게</span>
+    <span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">msg</span><span class="p">;</span>
+    <span class="n">msg</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="s">"Hello"</span><span class="p">),</span> <span class="n">msg</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="s">"C++"</span><span class="p">),</span> <span class="n">msg</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="s">"World"</span><span class="p">);</span>
+    <span class="n">msg</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="s">"from"</span><span class="p">),</span> <span class="n">msg</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="s">"VS Code"</span><span class="p">),</span> <span class="n">msg</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="s">"and the C++ extension!"</span><span class="p">);</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="k">const</span> <span class="n">string</span><span class="o">&amp;</span> <span class="n">word</span> <span class="o">:</span> <span class="n">msg</span><span class="p">){</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">word</span> <span class="o">&lt;&lt;</span> <span class="s">" "</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p>To be continued..</p>
+
+<hr />
+
+<p>Task list</p>
+
+:ET

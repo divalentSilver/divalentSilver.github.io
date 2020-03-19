@@ -1,0 +1,39 @@
+I"x<p>Dynamic Programming 문제들을 어떻게 접근하고 해결할 수 있는지 정리하고 있다.</p>
+
+<p>Dynamic Programming</p>
+<ul>
+  <li>used for optimization problems(finding “a” solution)</li>
+  <li>과정:
+    <ol>
+      <li>optimal solution의 structure 찾기</li>
+      <li>optimal solution의 value 정의</li>
+      <li>optimal solution의 value 계산</li>
+      <li>계산된 결과로 optimal solution 만들기</li>
+    </ol>
+  </li>
+</ul>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;iostream&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+    <span class="n">string</span> <span class="n">day</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="s">"SUN"</span><span class="p">,</span> <span class="s">"MON"</span><span class="p">,</span> <span class="s">"TUE"</span><span class="p">,</span> <span class="s">"WED"</span><span class="p">,</span> <span class="s">"THU"</span><span class="p">,</span> <span class="s">"FRI"</span><span class="p">,</span> <span class="s">"SAT"</span> <span class="p">};</span>
+	<span class="kt">int</span> <span class="n">month</span><span class="p">[</span><span class="mi">13</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">31</span> <span class="p">};</span>
+    <span class="kt">int</span> <span class="n">m</span><span class="p">,</span> <span class="n">d</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">totalDays</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">m</span> <span class="o">&gt;&gt;</span> <span class="n">d</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">m</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="n">m</span><span class="p">)</span> <span class="n">totalDays</span> <span class="o">+=</span> <span class="n">d</span><span class="p">;</span>
+        <span class="k">else</span> <span class="n">totalDays</span> <span class="o">+=</span> <span class="n">month</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+    <span class="p">}</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">day</span><span class="p">[</span><span class="n">totalDays</span><span class="o">%</span><span class="mi">7</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>To be continued..</p>
+
+<hr />
+
+<p>Task list</p>
+
+:ET
