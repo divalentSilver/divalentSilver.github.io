@@ -15,9 +15,10 @@ comments: true
 
 가상머신에 이미 깔려있는 우분투18이 있어서 여기에다 해보고 있으며 기본 Gnome Shell을 그대로 사용중이다.   
 
+
 ### sudo apt install 시 Could not get lock /var/lib/dpkg/lock-frontend 에러 해결 방법   
 뭔가를 sudo apt install 할 때 가끔씩 Could not get lock /var/lib/dpkg/lock-frontend 에러가 발생했다.   
-다른 명령어나 앱으로 인해 소프트웨어 install 또는 update 중일 때 dpkgfile이 lock되는데, 여러 프로세스들이 동시에 같은 파일을 수정하지 않게 하려고 이런 lock이 걸린다고 한다.   
+다른 명령어나 앱으로 인해 소프트웨어 install 또는 update 중일 때 dpkgfile이 lock되는데, 여러 프로세스가 동시에 같은 파일을 수정하지 않게 하려고 이런 lock이 걸린다고 한다.   
 이 때, 아래와 같은 절차를 진행하면 대부분 해결되었다.   
 
 실행중인 프로세스를 모두 kill:   
@@ -32,6 +33,7 @@ $ sudo rm /var/lib/dpkg/lock*
 $ sudo dpkg --configure -a
 $ sudo apt update
 ```
+
 
 ### OpenConnect 설치 후 VPN 서버에 연결 되는지 확인하는 방법
 [DevNet Sandbox Catalog][3]에서 sandbox 하나를 골라서 reserve하면 여기에 연결할 수 있는 VPN 서버를 하나 제공해준다. (4시간 한정)   
