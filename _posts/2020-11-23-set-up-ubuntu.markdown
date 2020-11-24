@@ -6,7 +6,6 @@ categories: [CISCO, DEVASC, Configuration]
 comments: true
 ---
 여유가 잠깐 생겨서 CISCO DEVASC 공부를 시작했다.   
-
 [Exam overview][1]를 보면 어떤 내용이 시험에 나오는지 자세히 알 수 있다.   
 각 항목마다 Study material이 링크되어있는데, 하나씩 따라해보며 공부하려고 한다.  (로그인해야 볼 수 있다)   
 이걸 따라해보다가 발생한 문제 해결법이나 정리할 필요가 있는 개념 등을 앞으로 포스팅하려고 한다.   
