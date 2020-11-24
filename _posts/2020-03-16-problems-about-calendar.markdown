@@ -42,6 +42,3 @@ To be continued..
 [1]: https://www.acmicpc.net/problem/1924
 
 ---
-
-Task list  
-
