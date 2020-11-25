@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  " 용어 정리"
+title:  "개발환경 의미, 기초 Git 명령어"
 date:   2020-11-25
-categories: [CISCO, DEVASC, Configuration]
+categories: [CISCO, DEVASC, Git]
 comments: true
 ---
 
@@ -17,7 +17,7 @@ comments: true
 	* Terminals and Shells: bash
 	* Programming language: Python, Node.js
 	* Text Editors and IDE: Atom, Visual Studio Code
-	* Development Tolls and Clients: Postman, ngrok, GoogleChrome
+	* Development Tolls and Clients: Postman, ngrok, Google Chrome
 	* VPN client: CISCO AnyConnect, OpenConnect
 	* Application Container Engine: Docker   
 
@@ -49,10 +49,8 @@ $ git push YOUR_REPOSITORY_NAME YOUR_BRANCH_NAME
 ```
 
 참고:
-```mermaid
-graph LR
-A[Unmodified] --> B[Modified]
-B --> C[Staged]
+```
+Unmodified -> Modified -> Staged
 ```
 
 [1]: https://developer.cisco.com/learning/lab/dev-what/step/1
