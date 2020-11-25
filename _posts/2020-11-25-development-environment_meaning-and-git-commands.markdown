@@ -7,7 +7,7 @@ comments: true
 ---
 
 오늘은 [What is a Development Environment, and why do you need one?][1]랑 [A Brief Introduction to Git][2]를 봤다.   
-개발환경에 대한 개념을 간단히 정리하고 기초 git 명령어를 정리했다.
+개발환경에 대한 개념을 간단히 정리하고 기초 git 명령어를 정리했다.   
 
 ### Development Environment   
 * Development Environment = (개인이 개발을 하기 위해 사용하는) Software + Tools + Configurations + Setups   
