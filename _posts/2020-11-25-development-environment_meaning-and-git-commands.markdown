@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "개발환경 의미, 기초 Git 명령어"
+title:  "개발환경의 의미, 기초 Git 명령어"
 date:   2020-11-25
 categories: [CISCO, DEVASC, Git]
 comments: true
