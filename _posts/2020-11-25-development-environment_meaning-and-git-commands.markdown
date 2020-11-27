@@ -24,7 +24,8 @@ comments: true
 
 ### Git 명령어 모음
 ```sh
-$ git clone YOUR_REPOSITORY_URL
+$ git clone REPOSITORY_URL
+$ git remote set-url origin YOUR_REPOSITORY_URL
 $ git status
 $ git diff
 $ git fetch
